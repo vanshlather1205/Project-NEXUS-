@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+@theme {
+  --color-primary: #2b8cee;
+  --color-explorer-primary: #0db9f2;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+  --color-map-dark: #101e22;
+  
+  --font-display: "Inter", sans-serif;
+  --font-explorer: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-display m-0 antialiased;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .map-gradient {
+    background: radial-gradient(circle at center, #1b323b 0%, #101e22 100%);
+  }
+}

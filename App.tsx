@@ -1047,7 +1047,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="layout-container flex min-h-screen grow flex-col transition-all duration-500 bg-background-light dark:bg-background-dark overflow-x-hidden text-display">
+    <div className="layout-container flex min-h-screen grow flex-col transition-all duration-500 bg-background-light dark:bg-background-dark overflow-x-hidden font-display">
       {renderView()}
     </div>
   );
